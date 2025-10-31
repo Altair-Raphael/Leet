@@ -1,0 +1,15 @@
+class Solution:
+
+#Solution using Boyer-Moore Voting algorithm
+    def majorityElement(self, nums: List[int]) -> int:
+        count, res = 0, 0
+        
+        for n in nums:
+            if count == 0:
+                res = n
+            if n == res:
+                count = count + 1
+            else:
+                count = count - 1
+        return res
+        
