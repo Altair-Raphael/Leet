@@ -1,5 +1,5 @@
 class Solution:
-    #new solution using pre and post products matrix
+    #new solution using pre and post products arrays
     def productExceptSelf(self, nums: List[int]) -> List[int]:
         lenght = len(nums)
         answer = [1]*lenght
